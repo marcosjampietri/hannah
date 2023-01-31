@@ -72,6 +72,7 @@ const TopSt = styled(animated.button)`
   border: none;
   border-radius: 50%;
   outline: 2px solid hsla(34, 25%, 0%, 0.3);
+  -moz-outline-radius: 50%;
   outline-offset: 5px;
   background-color: hsla(34, 25%, 55%, 1);
 
