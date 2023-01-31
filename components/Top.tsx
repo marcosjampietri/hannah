@@ -71,10 +71,22 @@ const TopSt = styled(animated.button)`
   color: white;
   border: none;
   border-radius: 50%;
-  outline: 2px solid hsla(34, 25%, 0%, 0.3);
-  -moz-outline-radius: 50%;
-  outline-offset: 5px;
+
   background-color: hsla(34, 25%, 55%, 1);
 
   z-index: 60;
+
+  &::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: -7px;
+    left: -7px;
+    width: 62px;
+    height: 62px;
+    background-color: transparent;
+    border: 1px solid hsla(34, 25%, 55%, 0.5);
+    border-radius: 50%;
+    z-index: 50;
+  }
 `;
