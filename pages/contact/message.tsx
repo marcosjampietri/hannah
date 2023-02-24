@@ -65,21 +65,21 @@ const FormComponent = ({ reg }: any) => {
       dispatch(setLoading(true));
       const { name, email, phone, message } = userData;
 
-      // await axios.post("/api/klavyio/subscribe", {
-      //   list_id: "TVhB7F",
-      //   name,
-      //   email,
-      //   phone_number: phone,
-      //   message,
-      // });
-      await axios.post("/api/klavyio/getprofile", {
+      await axios.post("/api/klavyio/subscribe", {
         list_id: "TVhB7F",
         name,
         email,
         phone_number: phone,
         message,
       });
-      // return subRes;
+      // await axios.post("/api/klavyio/getprofile", {
+      //   list_id: "TVhB7F",
+      //   name,
+      //   email,
+      //   phone_number: phone,
+      //   message,
+      // });
+
       dispatch(setLoading(false));
       dispatch(setComplete(true));
     } catch (err) {
