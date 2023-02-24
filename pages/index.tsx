@@ -1,5 +1,4 @@
 import Head from "next/head";
-import styles from "@/styles/Home.module.css";
 import styled from "styled-components";
 import { Inter, Montserrat } from "@next/font/google";
 
@@ -7,6 +6,7 @@ import Testimonials from "@/components/Testimonials";
 import Hero from "../components/Hero";
 import Footer from "@/components/Footer";
 import { animated, useScroll } from "react-spring";
+import Services from "@/components/Services";
 
 const ms = Montserrat({ subsets: ["latin"] });
 
@@ -22,6 +22,7 @@ export default function Home() {
       </Head>
       <Main>
         <Hero />
+        <Services />
         <Testimonials />
         <Footer />
         <Spin

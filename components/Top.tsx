@@ -53,8 +53,8 @@ export default Top;
 
 const TopSt = styled(animated.button)`
   position: fixed;
-  bottom: 30px;
-  right: 30px;
+  bottom: 10px;
+  right: 10px;
   width: 50px;
   height: 50px;
 

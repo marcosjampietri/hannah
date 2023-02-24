@@ -80,7 +80,7 @@ const Testimonials = () => {
         <Title>
           <RiDoubleQuotesR />
           <div>
-            <p>OUR MEMBERS` SUCCESFULL HISTORY</p>
+            <p>OUR CLIENTS` SUCCESFULL HISTORY</p>
             <h2>Testimonial from our clients</h2>
           </div>
         </Title>
@@ -122,7 +122,7 @@ const Section = styled.section`
 
   padding: 70px 0px 50px 0px;
   overflow: hidden;
-  background: hsla(35, 25%, 98%, 1);
+  background: hsla(35, 25%, 100%, 1);
 `;
 
 const Title = styled(animated.div)`
@@ -186,7 +186,8 @@ const Carroussel = styled(animated.div)`
 
   grid-column: 1;
   grid-row: 1;
-  width: 100%;
+  width: fit-content;
+  margin: 0px auto;
   touch-action: pan-y;
   overflow: hidden;
 

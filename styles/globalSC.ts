@@ -28,3 +28,10 @@ export const Margin = styled.div`
   justify-content: center;
   align-items: center;
 `;
+
+export const MarginNFx = styled.div`
+  width: 100%;
+  height: 100%;
+  max-width: 1200px;
+  margin: 0px auto;
+`;

@@ -1,8 +1,10 @@
 import { Margin } from "@/styles/globalSC";
+import { useRouter } from "next/router";
 import { animated, config, useInView, useSpring } from "react-spring";
 import styled from "styled-components";
 
 const Hero = () => {
+  const router = useRouter();
   const [ref, springs] = useInView(
     () => ({
       from: {
@@ -17,7 +19,7 @@ const Hero = () => {
       },
     }),
     {
-      rootMargin: "-40% 0%",
+      rootMargin: "-20% 0%",
     }
   );
 
@@ -34,7 +36,7 @@ const Hero = () => {
               <animated.span style={springs}>{`${word} `}</animated.span>
             </Text>
           ))}
-          <CTA>CONTACT ME</CTA>
+          <CTA onClick={() => router.push("/contact")}>CONTACT ME</CTA>
         </Title>
       </Margin>
     </Section>
@@ -78,7 +80,7 @@ const Text = styled(animated.span)`
     display: block;
     white-space: pre;
     transform: translateY(50%);
-    font-size: clamp(35px, 8vw, 60px);
+    font-size: clamp(25px, 8vw, 60px);
   }
 `;
 
