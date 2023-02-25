@@ -7,6 +7,7 @@ import Hero from "../components/Hero";
 import Footer from "@/components/Footer";
 import { animated, useScroll } from "react-spring";
 import Services from "@/components/Services";
+import Photo from "@/components/Photo";
 
 const ms = Montserrat({ subsets: ["latin"] });
 
@@ -23,6 +24,7 @@ export default function Home() {
       <Main>
         <Hero />
         <Services />
+        <Photo />
         <Testimonials />
         <Footer />
         <Spin

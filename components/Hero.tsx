@@ -96,6 +96,7 @@ const CTA = styled.button`
 
   background: hsla(35, 25%, 75%, 1);
   color: white;
+  font-weight: bold;
   font-size: clamp(16px, 1vw, 24px);
   border-radius: 5px;
   box-shadow: 2px 2px 5px hsla(35, 25%, 0%, 0.2);

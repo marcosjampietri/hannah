@@ -85,14 +85,14 @@ const Testimonials = () => {
           </div>
         </Title>
         <CarrWrap>
-          {transition((styles) => (
+          {transition((styles, item) => (
             <Carroussel {...bind()} key={testIndex} style={{ ...styles, x }}>
-              <h3>{testimonials[testIndex].tx}</h3>
+              <h3>{testimonials[item].tx}</h3>
               <div>
-                <img src={testimonials[testIndex].pic} alt="" />
+                <img src={testimonials[item].pic} alt="" />
                 <p>
-                  {`  ${testimonials[testIndex].name}`} <br />{" "}
-                  <span> {testimonials[testIndex].role} </span>
+                  {`  ${testimonials[item].name}`} <br />{" "}
+                  <span> {testimonials[item].role} </span>
                 </p>
               </div>
             </Carroussel>

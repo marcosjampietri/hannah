@@ -48,7 +48,8 @@ export default async function handler(
     const response = await KaviyoSdk.Profiles.subscribeProfiles({
       data: {
         type: "profile-subscription-bulk-create-job",
-        attributes: { subscriptions: [{ email, phone_number }], list_id },
+        // attributes: { subscriptions: [{ email, phone_number }], list_id },
+        attributes: { subscriptions: [{ email }], list_id },
       },
     });
 
