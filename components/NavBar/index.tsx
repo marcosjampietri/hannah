@@ -74,7 +74,6 @@ const Icon = styled(Link)`
 
     padding: 5px;
     cursor: pointer;
-    filter: drop-shadow(0px 0px 50px hsla(340, 100%, 70%, 0.3));
-    mix-blend-mode: screen;
+    filter: drop-shadow(0px 0px 50px hsla(340, 100%, 70%, 0));
   }
 `;

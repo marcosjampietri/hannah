@@ -68,4 +68,5 @@ export const SmallTitle = styled(animated.h3)`
   max-width: 1200px;
   color: hsla(35, 25%, 30%, 1);
   font-family: Bebas Neue;
+  font-weight: 100;
 `;

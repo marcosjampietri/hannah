@@ -42,7 +42,7 @@ export default Services;
 
 const Section = styled.section`
   width: 100vw;
-  height: 80vh;
+  min-height: 500px;
   position: relative; /* Add position: relative to establish a new positioning context */
 
   display: grid;
@@ -58,14 +58,13 @@ const Img = styled(animated.div)`
   height: 100%;
   overflow: hidden;
 
-  background-color: #041332;
+  background-color: #041537;
 
   img {
     opacity: 0.4;
     position: absolute;
-    top: 0;
-    /* left: -50%; */
-    /* transform: translateX(-50%); */
+    top: -100;
+
     min-width: 100%; /* Change width to min-width */
     min-height: 100%; /* Change height to min-height */
     object-fit: cover;

@@ -5,16 +5,18 @@ import styled from "styled-components";
 
 const Hero = () => {
   const router = useRouter();
-  const [ref, springs] = useInView(
+  const [ref, { opacity, y, x }] = useInView(
     () => ({
       from: {
         opacity: 0,
         y: 100,
+        x: 100,
         config: config.molasses,
       },
       to: {
         opacity: 1,
         y: 0,
+        x: 0,
         config: config.molasses,
       },
     }),
@@ -32,10 +34,10 @@ const Hero = () => {
     <Section>
       <Margin style={{ flexDirection: "column" }}>
         <Title ref={ref}>
-          <SmallTitle style={springs}>{title}</SmallTitle>
+          <SmallTitle style={{ opacity, x }}>{title}</SmallTitle>
           {array.map((word, i) => (
             <Text key={i}>
-              <animated.span style={springs}>{`${word} `}</animated.span>
+              <animated.span style={{ y }}>{`${word} `}</animated.span>
             </Text>
           ))}
         </Title>

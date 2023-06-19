@@ -29,13 +29,13 @@ const Footer = () => {
     },
     {
       icon: <FiMail />,
-      tx: "hannahodon@gmail.com",
-      path: "mailto:hannahodon@gmail.com",
+      tx: "hanna@the-mettleworks.com",
+      path: "mailto:hanna@the-mettleworks.com",
     },
     {
       icon: <BsWhatsapp style={{ fill: "hsla(35, 25%, 60%, 1)" }} />,
       tx: "+44 7971 517847",
-      path: "https://api.whatsapp.com/send?phone=447541505202&text=Hello! I'd like to have more ifformation about your service",
+      path: "https://api.whatsapp.com/send?phone=447971517847&text=Hello! I'd like to have more ifformation about your service",
     },
   ];
   const socials = [
