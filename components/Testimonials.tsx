@@ -14,28 +14,22 @@ const Testimonials = () => {
 
   const testimonials = [
     {
-      tx: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vitae tincidunt turpis. Fusce posuere tempus orci, sit amet sollicitudin lectus ullamcorper eu. Duis malesuada ultrices mattis. Aliquam lobortis quis nisi tempor sagittis. Curabitur sagittis eget diam non posuere.",
+      tx: "We had our first one hour consultation and I left the meeting with a clearer picture of who my target audience is, what steps I need to do next that will help me reach them, a timeline of activities that feels realistic, and a feeling that I am supported in my big thinking. No matter what industry you are in, I highly recommend you book a session and experience the magic and support of Hannah for yourself.",
       pic: "https://plus.unsplash.com/premium_photo-1661686687486-2329be3e383f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3132&q=80",
-      name: "Jane",
-      role: "Entrepreneur",
+      name: "Sarah N",
+      role: "Founder of Miiellee",
     },
     {
-      tx: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vitae tincidunt turpis. Fusce posuere tempus orci, sit amet sollicitudin lectus ullamcorper eu. Duis malesuada ultrices mattis. Aliquam lobortis quis nisi tempor sagittis. Curabitur sagittis eget diam non posuere.",
+      tx: "Hannah has a way of helping you find clarity. She is approachable, knowledgeable, and really cares for her clients. Working with her has been thoroughly enjoyable and I would definitely recommend her service as she has helped me realize my goals. ",
       pic: "https://images.unsplash.com/photo-1588731234159-8b9963143fca?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80",
-      name: "John",
+      name: "John W",
       role: "Busniess Consultant",
     },
     {
-      tx: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vitae tincidunt turpis. Fusce posuere tempus orci, sit amet sollicitudin lectus ullamcorper eu. Duis malesuada ultrices mattis. Aliquam lobortis quis nisi tempor sagittis. Curabitur sagittis eget diam non posuere.",
+      tx: "I would like to begin by stating that even just one throwaway sentence from Hannah can be life changing. That’s the gift that comes with working with someone that has such a wealth of knowledge. She guides you towards the answers you’ve been looking for so effortlessly.",
       pic: "https://images.unsplash.com/photo-1537511446984-935f663eb1f4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80",
       name: "Danny",
       role: "Manager",
-    },
-    {
-      tx: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vitae tincidunt turpis. Fusce posuere tempus orci, sit amet sollicitudin lectus ullamcorper eu. Duis malesuada ultrices mattis. Aliquam lobortis quis nisi tempor sagittis. Curabitur sagittis eget diam non posuere.",
-      pic: "https://images.unsplash.com/photo-1492106087820-71f1a00d2b11?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80",
-      name: "Melissa",
-      role: "Bon Vivant",
     },
   ];
 

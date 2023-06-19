@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import styled from "styled-components";
 import { animated } from "react-spring";
 
@@ -11,12 +12,12 @@ const NavBar = () => {
     <>
       <Nav>
         <Margin>
-          <Link
+          <Icon
             href="/"
             style={{ fontWeight: "900", color: "hsla(35, 25%, 30%, 1)" }}
           >
-            LOGO
-          </Link>
+            <Image src="/mmlogocolour.jpg" height={75} width={125} alt="logo" />
+          </Icon>
           {/* <Link href="/about" style={{ fontWeight: "900", color: "white" }}>
             ABOUT
           </Link> */}
@@ -66,11 +67,14 @@ const Margin = styled.div`
   }
 `;
 
-const Logo = styled.img`
-  width: 100px;
-  height: 100%;
+const Icon = styled(Link)`
+  img {
+    width: 100px;
+    height: 100%;
 
-  background: transparent;
-  cursor: pointer;
-  // filter: drop-shadow(0px 0px 50px hsla(340, 100%, 70%, 0.3));
+    padding: 5px;
+    cursor: pointer;
+    filter: drop-shadow(0px 0px 50px hsla(340, 100%, 70%, 0.3));
+    mix-blend-mode: screen;
+  }
 `;

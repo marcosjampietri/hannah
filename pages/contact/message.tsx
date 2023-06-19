@@ -41,10 +41,10 @@ const FormComponent = ({ reg }: any) => {
     message: Yup.string()
       .required("What do you want to ask me? 😅")
       .min(20, "message must be at least 20 characters long 😒"),
-    acceptTerms: Yup.bool().oneOf(
-      [true],
-      "Hey! you need to accept the terms to register 😁"
-    ),
+    // acceptTerms: Yup.bool().oneOf(
+    //   [true],
+    //   "Hey! you need to accept the terms to register 😁"
+    // ),
   });
 
   const formOptions = {
@@ -121,7 +121,7 @@ const FormComponent = ({ reg }: any) => {
         <>
           <div>SEND A MESSAGE</div>
           <Field>
-            <Label>NAME</Label>
+            <Label>NAME *</Label>
             <MdAccountCircle />
             <Input
               {...register("name")}
@@ -135,7 +135,7 @@ const FormComponent = ({ reg }: any) => {
             )}
           </Field>
           <Field>
-            <Label>E-MAIL</Label>
+            <Label>E-MAIL *</Label>
             <MdEmail />
             <Input
               {...register("email")}
@@ -163,7 +163,7 @@ const FormComponent = ({ reg }: any) => {
             )}
           </Field>
           <Field style={{ height: "200px" }}>
-            <Label>YOUR MESSAGE</Label>
+            <Label>YOUR MESSAGE *</Label>
             <Input
               {...register("message")}
               type="text"
@@ -175,7 +175,7 @@ const FormComponent = ({ reg }: any) => {
               erreMss ? <Warn style={styles}>{erreMss?.message}</Warn> : null
             )}
           </Field>
-          <label htmlFor="acceptTerms">
+          {/* <label htmlFor="acceptTerms">
             <div
               style={{
                 position: "relative",
@@ -197,7 +197,7 @@ const FormComponent = ({ reg }: any) => {
                 erracpt ? <Warn style={styles}>{erracpt?.message}</Warn> : null
               )}
             </div>
-          </label>
+          </label> */}
           <Submit type="submit" className={`${errorsExist ? "disabled" : ""}`}>
             SUBMIT
           </Submit>{" "}
@@ -267,7 +267,7 @@ export const Input = styled.input`
   width: 100%;
   height: 100%;
   padding: 0px 37px;
-  padding-top: 20px;
+  padding-top: 30px;
   font-size: 16px;
 
   border-radius: 5px;
@@ -287,7 +287,7 @@ export const Input = styled.input`
   :focus {
     transition: 0.3s;
     // padding: 0px 60px;
-    padding-top: 4px;
+    /* padding-top: 4px; */
     padding-left: calc(35px + 5vw);
 
     outline: none;

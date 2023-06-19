@@ -24,18 +24,18 @@ const Footer = () => {
   const contacts = [
     {
       icon: <FiMapPin />,
-      tx: "Camden Town, London, UK",
+      tx: "London, UK",
       path: "",
     },
     {
       icon: <FiMail />,
-      tx: "mgjampietri@hotmail.com",
-      path: "mailto:mgjampietri@hotmail.com",
+      tx: "hannahodon@gmail.com",
+      path: "mailto:hannahodon@gmail.com",
     },
     {
       icon: <BsWhatsapp style={{ fill: "hsla(35, 25%, 60%, 1)" }} />,
-      tx: "+44 7541505202",
-      path: "https://api.whatsapp.com/send?phone=447541505202&text=Hello! I'd like to have more ifformation about the service",
+      tx: "+44 7971 517847",
+      path: "https://api.whatsapp.com/send?phone=447541505202&text=Hello! I'd like to have more ifformation about your service",
     },
   ];
   const socials = [
@@ -69,10 +69,6 @@ const Footer = () => {
       path: "",
     },
     {
-      name: "Blog",
-      path: "",
-    },
-    {
       name: "Contact",
       path: "",
     },
@@ -83,10 +79,9 @@ const Footer = () => {
       <Margin>
         <Main>
           <Logo>
-            {/* <Image src="/logo.svg" width="80" height="55" alt="logo" /> */}
-            HANNAH LOGO
+            <Image src="/mmlogocolour.jpg" width="80" height="45" alt="logo" />
           </Logo>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p>The Mettle Works Business Consultancy</p>
           <Social>
             {socials.map((social, i) => (
               <a key={i} href={social.path} target="_blank" rel="noreferrer">
@@ -140,10 +135,8 @@ const Margin = styled.div`
 
   display: flex;
   ${below.med`
-    display: block;
-    
-         
-       `};
+    display: block;       
+  `};
 `;
 
 const List = styled.div`

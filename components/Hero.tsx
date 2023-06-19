@@ -1,4 +1,4 @@
-import { Margin } from "@/styles/globalSC";
+import { Margin, SmallTitle } from "@/styles/globalSC";
 import { useRouter } from "next/router";
 import { animated, config, useInView, useSpring } from "react-spring";
 import styled from "styled-components";
@@ -23,21 +23,25 @@ const Hero = () => {
     }
   );
 
+  const title = "Welcome to The Mettleworks";
   const string =
-    "I'm Hannah Bananah, Expert in Funding Solutions: Your Trusted Advisor for Grant Success";
+    "a consultancy practice dedicated to helping entrepreneurs build and grow their businesses.";
   const array = string.split(" ");
 
   return (
     <Section>
-      <Margin>
+      <Margin style={{ flexDirection: "column" }}>
         <Title ref={ref}>
+          <SmallTitle style={springs}>{title}</SmallTitle>
           {array.map((word, i) => (
             <Text key={i}>
               <animated.span style={springs}>{`${word} `}</animated.span>
             </Text>
           ))}
-          <CTA onClick={() => router.push("/contact")}>CONTACT ME</CTA>
         </Title>
+        <div style={{ width: "100%", padding: "0px 20px" }}>
+          <CTA onClick={() => router.push("/contact")}>CONTACT ME</CTA>
+        </div>
       </Margin>
     </Section>
   );
@@ -59,7 +63,7 @@ const Section = styled.section`
 const Title = styled.h1`
   position: relative;
   width: 100%;
-  margin: 0px;
+  padding: 20px;
   margin: 20px;
 
   /* border: 1px solid red; */
@@ -85,7 +89,7 @@ const Text = styled(animated.span)`
 `;
 
 const CTA = styled.button`
-  position: absolute;
+  /* position: absolute; */
   left: 0px;
   bottom: -100px;
   max-width: 300px;

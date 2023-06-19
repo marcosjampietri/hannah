@@ -23,8 +23,8 @@ export default function Home() {
       </Head>
       <Main>
         <Hero />
-        <Services />
         <Photo />
+        <Services />
         <Testimonials />
         <Footer />
         <Spin
@@ -34,7 +34,7 @@ export default function Home() {
             ),
           }}
         >
-          🍌
+          M W
         </Spin>
       </Main>
     </>
@@ -50,10 +50,11 @@ const Spin = styled(animated.div)`
   width: 50px;
   height: 50px;
 
-  border: 1px solid hsla(35, 25%, 75%, 0.5);
+  border: 1px solid hsla(35, 25%, 25%, 0.5);
   border-radius: 50%;
-  font-size: 35px;
+  font-size: 25px;
+  color: hsla(35, 25%, 25%, 0.5);
 
   display: grid;
-  place-items: center; ;
+  place-items: center;
 `;
