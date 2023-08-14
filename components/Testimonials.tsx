@@ -20,10 +20,10 @@ const Testimonials = () => {
       role: "Founder of Miiellee",
     },
     {
-      tx: "Hannah has a way of helping you find clarity. She is approachable, knowledgeable, and really cares for her clients. Working with her has been thoroughly enjoyable and I would definitely recommend her service as she has helped me realize my goals. ",
+      tx: "Hannah has a way of helping you find clarity. She is approachable, knowledgeable, and really cares for her clients. Working with her has been thoroughly enjoyable and I would definitely recommend her service as she has helped me realize my goals.",
       pic: "https://images.unsplash.com/photo-1588731234159-8b9963143fca?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80",
-      name: "John W",
-      role: "Busniess Consultant",
+      name: "Aaron Lawrence",
+      role: "Founder of Perch Therapy & Mediation",
     },
     {
       tx: "I would like to begin by stating that even just one throwaway sentence from Hannah can be life changing. That’s the gift that comes with working with someone that has such a wealth of knowledge. She guides you towards the answers you’ve been looking for so effortlessly.",
@@ -231,7 +231,7 @@ const Carroussel = styled(animated.div)`
       color: hsla(0, 0%, 40%, 1);
       white-space: pre;
 
-      transform: scaleX(1.2);
+      transform: scaleX(1.1);
 
       span {
         font-weight: 200;

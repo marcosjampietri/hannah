@@ -16,7 +16,7 @@ const NavBar = () => {
             href="/"
             style={{ fontWeight: "900", color: "hsla(35, 25%, 30%, 1)" }}
           >
-            <Image src="/mmlogocolour.jpg" height={75} width={125} alt="logo" />
+            <Image src="/Full Color.svg" height={75} width={125} alt="logo" />
           </Icon>
           {/* <Link href="/about" style={{ fontWeight: "900", color: "white" }}>
             ABOUT
@@ -74,6 +74,6 @@ const Icon = styled(Link)`
 
     padding: 5px;
     cursor: pointer;
-    filter: drop-shadow(0px 0px 50px hsla(340, 100%, 70%, 0));
+    filter: drop-shadow(0px 0px 50px hsla(340, 100%, 70%, 1));
   }
 `;

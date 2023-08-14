@@ -3,10 +3,11 @@ import Image from "next/image";
 import { Inter } from "@next/font/google";
 import styles from "@/styles/Home.module.css";
 import styled from "styled-components";
+import { Margin } from "@/styles/globalSC";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export default function Home() {
+export default function About() {
   return (
     <>
       <Head>
@@ -15,7 +16,80 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Main className={styles.main}>About Me Coming Soon</Main>
+      <Main>
+        <Margin>
+          <Section>
+            <Image
+              src="/Hannah.png"
+              width="440"
+              height="480"
+              alt="logo"
+              style={{
+                objectFit: "cover",
+                objectPosition: "center 20%",
+                width: "90%",
+                maxWidth: "350px",
+                height: "650px",
+                margin: "0px 0px",
+                boxShadow: "2px 2px 15px #00000090",
+              }}
+            />
+            <p>
+              After graduating with an English and cultural studies degree from
+              Manchester Metropolitan University in 2012, I moved back down to
+              London to continue my career in Financial Services working for
+              Deloitte and The RBS group, before escaping the city for the
+              public sector where I earned my PRINCE2, working in business
+              development,  I managed a broad range of projects, managing the
+              commercial portfolio I learnt how changes in policy and
+              legislation can affect businesses on a financial and operational
+              level. I’ve spent the last 5 years as a Senior consultant scoping
+              out and delivering commercial opportunities helping clients
+              succeed in a changing and, at times, challenging environment.
+            </p>
+            <p>
+              I’m keenly aware that the best entrepreneurs (and people) have
+              lived dynamic, varied lives. My life outside of work has provided
+              me with a wealth of cultural and personal experience in how to
+              succeed in a way that works best for you. I was raised in London’s
+              vibrant Soho, and the eccentric characters and their wild
+              histories have made me become eager to share stories and learn new
+              ones. I now empower others to harness their own stories to launch
+              their own business. 
+            </p>
+            <p>
+              Being a trained counsellor enables me to establish a strong
+              rapport with clients and create a safe and supportive environment,
+              fostering trust and openness, allowing clients to share their
+              challenges, fears, and aspirations more freely. Helping me to
+              actively listen, this foundation helps me in understanding a
+              clients’ emotional state, concerns, and motivations. This deeper
+              understanding enables me to provide more personalised and
+              compassionate guidance, tailored to the unique needs of the
+              client. These skills facilitate deeper exploration and
+              self-reflection for the client, helping them gain insights into
+              their own thoughts, behaviours, and patterns that may be impacting
+              their business performance.
+            </p>
+            <p>
+              In 2019, I was accepted into an accelerator programme to pursue my
+              own interests in healthy food creation and packaging and food
+              waste reduction, with the development of frozen soup pods. During
+              lockdown, I also decided to push my own boundaries, establish my
+              voice, and performing stand-up comedy. When we returned to
+              'normal,' I thoroughly enjoyed the experience and advanced to the
+              quarterfinals of the West End New Act of the Year 2022
+              competition, as well as being given the opportunity to host the
+              Edinburgh fringe festival, which I thoroughly enjoyed, and went on
+              to do gigs at the Comedy Store, the Frog and Bucket, PlayStation,
+              and the Buddha Fields Festival, among others. This experience has
+              prepared me to be an effective speaker, presenter, and podcaster,
+              allowing me to assist my clients in conquering their fear of
+              public speaking.
+            </p>
+          </Section>
+        </Margin>
+      </Main>
     </>
   );
 }
@@ -23,4 +97,19 @@ export default function Home() {
 const Main = styled.main`
   display: grid;
   place-content: center;
+`;
+
+const Section = styled.section`
+  width: 100vw;
+  min-height: 100vh;
+  padding: 70px 20px 0px;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  p {
+    margin: 15px;
+    font-family: Montserrat;
+  }
 `;

@@ -47,6 +47,7 @@ export const Title = styled.h2`
   font-weight: 600;
   font-size: 2.5em;
   text-align: center;
+  font-family: Montserrat;
 
   color: white;
   ${below.med`

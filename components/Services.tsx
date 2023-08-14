@@ -59,7 +59,7 @@ const Section = styled.section`
   padding: 100px 10px;
 
   background: hsla(35, 25%, 75%, 1);
-  font-family: Montserrat;
+
   color: white;
 `;
 

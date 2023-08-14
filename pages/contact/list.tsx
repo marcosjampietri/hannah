@@ -18,8 +18,8 @@ const Links = () => {
     },
     {
       icon: <FiMail />,
-      href: "mailto:hanna@the-mettleworks.com",
-      value: "hanna@the-mettleworks.com",
+      href: "mailto:hannah@the-mettleworks.com",
+      value: "hannah@the-mettleworks.com",
     },
     {
       icon: <BsWhatsapp />,
@@ -83,6 +83,7 @@ export default Links;
 
 const Card = styled.div`
   width: 100%;
+  max-width: 600px;
   flex: 1 1 400px;
   margin: 10px;
   height: 650px;

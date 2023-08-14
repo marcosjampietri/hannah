@@ -1,18 +1,12 @@
 import React, { useEffect, useRef } from "react";
 import { useDispatch } from "react-redux";
 import Link from "next/link";
-import {
-  animated,
-  useSpring,
-  useTrail,
-  useTransition,
-  config,
-} from "react-spring";
+import { animated, useTransition } from "react-spring";
 
 import styled from "styled-components";
 import BezierEasing from "bezier-easing";
 import { useTypedSelector } from "../store/index";
-import { navOnAction, navOffAction, selectToggle } from "../store/toggleSlicer";
+import { navOffAction, selectToggle } from "../store/toggleSlicer";
 
 const useOutsideAlerter = (ref: React.RefObject<HTMLElement>) => {
   const dispatch = useDispatch();
@@ -44,15 +38,15 @@ const Child = () => {
       target: undefined,
     },
     {
-      name: "ABOUT",
-      color: "hsla(263, 0%, 40%, 0.2)",
-      path: "/about",
+      name: "PRICING",
+      color: "hsla(263, 0%, 20%, 0.2)",
+      path: "/pricing",
       target: undefined,
     },
     {
-      name: "WORKS",
-      color: "hsla(263, 0%, 20%, 0.2)",
-      path: "/works",
+      name: "ABOUT",
+      color: "hsla(263, 0%, 40%, 0.2)",
+      path: "/about",
       target: undefined,
     },
     {
@@ -103,7 +97,7 @@ const Menu = () => {
     },
     config: {
       duration: 1000,
-      easing: (t) => easing(t),
+      easing: (t: number) => easing(t),
     },
   });
 

@@ -25,7 +25,7 @@ export default function Home() {
         <Section>
           <Wrap>
             <List />
-            <Form />
+            {/* <Form /> */}
           </Wrap>
         </Section>
         <Section>

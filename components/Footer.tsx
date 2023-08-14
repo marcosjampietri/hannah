@@ -29,8 +29,8 @@ const Footer = () => {
     },
     {
       icon: <FiMail />,
-      tx: "hanna@the-mettleworks.com",
-      path: "mailto:hanna@the-mettleworks.com",
+      tx: "hannah@the-mettleworks.com",
+      path: "mailto:hannah@the-mettleworks.com",
     },
     {
       icon: <BsWhatsapp style={{ fill: "hsla(35, 25%, 60%, 1)" }} />,
@@ -58,19 +58,19 @@ const Footer = () => {
   const pages = [
     {
       name: "Home",
-      path: "",
+      path: "/",
     },
     {
       name: "About",
-      path: "",
+      path: "/about",
     },
     {
-      name: "FAQs",
-      path: "",
+      name: "Prices",
+      path: "/pricing",
     },
     {
       name: "Contact",
-      path: "",
+      path: "/contact",
     },
   ];
 
@@ -79,7 +79,7 @@ const Footer = () => {
       <Margin>
         <Main>
           <Logo>
-            <Image src="/mmlogocolour.jpg" width="80" height="45" alt="logo" />
+            <Image src="/Full Color.svg" width="120" height="60" alt="logo" />
           </Logo>
           <p>The Mettle Works Business Consultancy</p>
           <Social>
@@ -217,6 +217,7 @@ const Social = styled.div`
 const Logo = styled.div`
   cursor: pointer;
   margin-bottom: 25px;
+  filter: brightness(1000%);
   .img {
     object-fit: cover;
   }

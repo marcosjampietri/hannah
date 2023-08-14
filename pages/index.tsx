@@ -1,13 +1,14 @@
 import Head from "next/head";
 import styled from "styled-components";
 import { Inter, Montserrat } from "@next/font/google";
-
+import Image from "next/image";
 import Testimonials from "@/components/Testimonials";
 import Hero from "../components/Hero";
 import Footer from "@/components/Footer";
 import { animated, useScroll } from "react-spring";
 import Services from "@/components/Services";
 import Photo from "@/components/Photo";
+import Advantages from "@/components/Advantages";
 
 const ms = Montserrat({ subsets: ["latin"] });
 
@@ -24,6 +25,7 @@ export default function Home() {
       <Main>
         <Hero />
         <Photo />
+        <Advantages />
         <Services />
         <Testimonials />
         <Footer />
@@ -34,7 +36,7 @@ export default function Home() {
             ),
           }}
         >
-          M W
+          <Image src="/Icon Color.svg" height={35} width={35} alt="logo" />
         </Spin>
       </Main>
     </>

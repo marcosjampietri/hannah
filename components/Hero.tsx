@@ -1,3 +1,4 @@
+import { below } from "@/styles/breakpoints";
 import { Margin, SmallTitle } from "@/styles/globalSC";
 import { useRouter } from "next/router";
 import { animated, config, useInView, useSpring } from "react-spring";
@@ -33,14 +34,34 @@ const Hero = () => {
   return (
     <Section>
       <Margin style={{ flexDirection: "column" }}>
-        <Title ref={ref}>
-          <SmallTitle style={{ opacity, x }}>{title}</SmallTitle>
+        <Text ref={ref}>
+          <animated.div
+            style={{
+              border: "1px solid hsla(34, 15%, 75%, 1)",
+              padding: "5px",
+              margin: "10px -10px",
+              opacity,
+              x,
+            }}
+          >
+            <Dictionary>
+              <div>
+                <Word>mettle</Word> <Pronunciation>[ˈmet.əl]</Pronunciation>
+                <PartOfSpeech>(noun)</PartOfSpeech>
+              </div>
+              <span>
+                person's ability to cope with difficulties; spirit and
+                resilience.
+              </span>
+            </Dictionary>
+          </animated.div>
+          <SmallTitle style={{ opacity, y }}>{title}</SmallTitle>
           {array.map((word, i) => (
-            <Text key={i}>
+            <H1 key={i}>
               <animated.span style={{ y }}>{`${word} `}</animated.span>
-            </Text>
+            </H1>
           ))}
-        </Title>
+        </Text>
         <div style={{ width: "100%", padding: "0px 20px" }}>
           <CTA onClick={() => router.push("/contact")}>CONTACT ME</CTA>
         </div>
@@ -62,7 +83,40 @@ const Section = styled.section`
   );
 `;
 
-const Title = styled.h1`
+const Dictionary = styled.div`
+  border: 1px solid hsla(34, 0%, 75%, 1);
+  /* max-width: 300px; */
+  padding: 10px;
+
+  opacity: 0.5;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  span {
+    /* align-items: center; */
+    font-family: "Times New Roman";
+  }
+`;
+
+const Word = styled.span`
+  font-weight: bold;
+  font-size: 25px;
+  margin-right: 5px;
+`;
+
+const Pronunciation = styled.span`
+  font-style: italic;
+  margin-right: 5px;
+`;
+
+const PartOfSpeech = styled.span`
+  font-style: italic;
+  margin-right: 5px;
+`;
+
+const Text = styled.div`
   position: relative;
   width: 100%;
   padding: 20px;
@@ -73,7 +127,7 @@ const Title = styled.h1`
   flex-wrap: wrap;
 `;
 
-const Text = styled(animated.span)`
+const H1 = styled(animated.h1)`
   width: fit-content;
 
   color: hsla(34, 15%, 30%, 1);
@@ -86,7 +140,17 @@ const Text = styled(animated.span)`
     display: block;
     white-space: pre;
     transform: translateY(50%);
-    font-size: clamp(25px, 8vw, 60px);
+
+    font-size: 1.5em;
+
+    ${below.med`
+    display: block;
+    font-size: 1.2em;    
+  `};
+    ${below.small`
+    display: block;
+    font-size: 1em;    
+  `};
   }
 `;
 
