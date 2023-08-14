@@ -6,6 +6,7 @@ import { FaRegBuilding, FaSearchengin, FaWrench } from "react-icons/fa";
 import { GiReceiveMoney } from "react-icons/gi";
 import { AiOutlineReconciliation, AiOutlineSetting } from "react-icons/ai";
 import { Title as Title1 } from "@/styles/globalSC";
+
 const Advantages = () => {
   const optn = {
     threshold: [0.3],
@@ -67,15 +68,15 @@ const Advantages = () => {
           <Title style={spring}>
             {/* <p style={{ fontFamily: "Bebas Neue" }}>WHAT DO WE OFFER?</p> */}
             <Title1 style={{ color: "#6b5e1f" }}>
-              Why Choose The Mettleworks?
+              What Services do We Offer?
             </Title1>
           </Title>
           {trail.map((styles, i) => (
             <Item key={i} style={{ ...styles }}>
               <Icon>{items[i].icon}</Icon>
               <div>
-                <h2>{items[i].title}</h2>
-                <h3>{items[i].tx}</h3>
+                <h3>{items[i].title}</h3>
+                <p>{items[i].tx}</p>
               </div>
             </Item>
           ))}
@@ -129,7 +130,7 @@ const ItemsWrap = styled(animated.div)`
 
 const Item = styled(animated.div)`
   width: 100%;
-  min-width: 300px;
+
   flex: 1 0 50%;
   // min-height: 25%;
   padding: 0px 0px;
@@ -143,20 +144,21 @@ const Item = styled(animated.div)`
     margin: 20px;
   }
 
-  h2 {
+  h3 {
     font-family: Bebas Neue;
     color: hsla(35, 25%, 45%, 1);
     letter-spacing: 2px;
     font-size: 25px;
     line-height: 1.5em;
+    font-weight: 200;
   }
 
-  h3 {
+  p {
     font-family: Montserrat, Sans-Serif;
-    font-weight: 100;
     font-size: 16px;
     line-height: 1.5em;
     color: hsla(0, 0%, 50%, 1);
+    font-weight: 300;
   }
 `;
 

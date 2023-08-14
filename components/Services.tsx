@@ -95,4 +95,10 @@ const Card = styled.div`
 
   h3 {
   }
+  p {
+    font-family: Montserrat, Sans-Serif;
+    font-size: 16px;
+    line-height: 1.5em;
+    font-weight: 300;
+  }
 `;

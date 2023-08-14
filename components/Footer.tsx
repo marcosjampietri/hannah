@@ -194,6 +194,7 @@ const Line = styled.div`
 const Social = styled.div`
   max-width: 300px;
   min-width: 210px;
+
   padding: 12px 10px;
   border-top: 1px solid grey;
 
@@ -201,6 +202,8 @@ const Social = styled.div`
   justify-content: space-between;
 
   a {
+    width: 48px;
+    height: 48px;
     border: 1px solid hsla(35, 25%, 35%, 1);
     border-radius: 50%;
     text-align: center;

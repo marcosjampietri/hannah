@@ -39,7 +39,7 @@ const Hero = () => {
             style={{
               border: "1px solid hsla(34, 15%, 75%, 1)",
               padding: "5px",
-              margin: "10px -10px",
+              margin: "10px -18px",
               opacity,
               x,
             }}
